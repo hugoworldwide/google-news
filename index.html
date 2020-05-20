@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Hugo's News'</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-primary" href="#">Google News</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Latest <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Featured</a>
+            </div>
+        </div>
+
+        <form class="form-inline col-lg-8 col-lg-offset-4 col-xs-4">
+            <input class="form-control mr-sm-2 col-xs-4" type="search" placeholder="Search" aria-label="Search"
+                id="research">
+            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+            <a class="nav-item nav-link ml-auto p-2" href="#">Sign in</a>
+
+        </form>
+
+    </nav>
+
+    <div class="main-section">
+        <div id="newsArea">
+            <div id="news">
+                <div id="contentsArea">
+
+                    <div id="title">American media undercutting Trump’s tense battle with China: Goodwin</div>
+                    <div id="source">LA Times</div>
+                    <div id="publishedAt">Yesterday</div>
+                    <a href="#"> ==> access article</a>
+                </div>
+
+
+                <div id="imgArea">
+                    <img src="https://thenypost.files.wordpress.com/2020/05/trump-13.jpg?quality=90&strip=all&w=618&h=410&crop=1"
+                        width="200px" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="loadMore()">Load More News</button>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.min.js"></script>
+</body>
+
+</html>
